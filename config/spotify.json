@@ -1,0 +1,5 @@
+{
+    "clientID": "97e7ad97080e4817a277d160b6b25546",
+    "clientSecret": "76d62668a0304a68b93d9f2234b988b7",
+    "redirectURI": "http://localhost:4000/api/callback" 
+}
