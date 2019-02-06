@@ -1,0 +1,33 @@
+.searchResults{
+    display:flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+#resultList{
+    align-self: center;
+}
+
+#displayResults{
+    align-self: center;
+    overflow: auto;
+    height:550px;
+    padding:20px;
+    margin-top: 10px;
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 90%;
+}
+
+#toggle{
+    padding: 10px;
+}
+
+@media screen and (max-width: 640px){
+    #displayResults{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}

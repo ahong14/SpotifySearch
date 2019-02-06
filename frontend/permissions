@@ -1,0 +1,3 @@
+sudo chmod -R +rw src/
+sudo chmod -R +rw public/
+

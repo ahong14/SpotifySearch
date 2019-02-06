@@ -1,0 +1,34 @@
+.homeContent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#inputs{
+    align-self: center;
+    padding: 5px;
+}
+
+#inputs form{
+    padding: 10px;
+    align-self: center;
+}
+
+#searchButton{
+    width: 150px;
+    align-self: center;
+}
+
+.header{
+    display:flex;
+    flex-direction: column;
+}
+
+#headerContent{
+    align-self: center;
+}
+
+#headerImage{
+    width: 350px;
+    height:300px;
+}
