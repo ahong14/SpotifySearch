@@ -4,8 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "frontend": "cd frontend/ && ./permissions && npm start",
-    "backend": "./permissions && nodemon server.js",
+    "backendPackages": "npm install",
+    "frontendPackages": "cd frontend/ && npm install",
+    "frontend": "cd frontend/ && npm start",
+    "backend": "nodemon server.js",
     "start": "concurrently \"npm run backend\" \"npm run frontend\""
   },
   "author": "",
