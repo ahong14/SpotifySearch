@@ -51,7 +51,7 @@ router.get('/', (req, res) => {
 
         //create query string parameters, access tokens from URL
         var queries = querystring.stringify(tokens);
-        var redirectURL = 'http://localhost:3000/home?' + queries;
+        var redirectURL = '/home?' + queries;
         return res.status(200).redirect(redirectURL);
     })
 });

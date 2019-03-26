@@ -7,7 +7,6 @@ import DropdownButton from '../DropdownButton/DropdownButton';
 
 //Component that handles search results
 class Results extends Component{
-
     constructor(props){
         super(props);
         //state consists of search results and ordering method
@@ -56,7 +55,6 @@ class Results extends Component{
 
     render(){
         var renderResults;
-
         //if no search was made, display empty results
         if(this.props.results.length === 0){
             renderResults = <EmptySearch/>

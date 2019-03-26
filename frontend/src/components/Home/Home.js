@@ -41,7 +41,7 @@ class Home extends Component{
     searchQueries(){
         //send GET request to API
         //params include artist, album, and access token
-        axios.get('http://localhost:4000/api/search', {
+        axios.get('/api/search', {
             params: {
                 artist: this.state.artist,
                 album: this.state.album,
