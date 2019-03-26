@@ -14,6 +14,9 @@ app.use(bodyParser.urlencoded({extended: false}));
 // use cors;
 app.use(cors());
 
+//serve react files
+app.use(express.static(path.join(__dirname, 'frontend/build')));
+
 //use routes
 const router = express.Router();
 const search = require('./routes/search');
@@ -24,6 +27,11 @@ const callback = require('./routes/callback');
 app.use('/api/auth', auth);
 app.use('/api/search', search);
 app.use('/api/callback', callback);
+
+//fix react app crashing on refresh
+app.get('/*', (req,res) => {
+  res.sendFile(path.join(__dirname + '/frontend/build/index.html'))
+})
 
 // listen to requests on port
 // choose port based on environment
