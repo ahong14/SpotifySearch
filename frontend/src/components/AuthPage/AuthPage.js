@@ -12,7 +12,7 @@ class AuthPage extends Component{
     }
 
     componentDidMount(){
-        var authURL = this.state.currentURL + '/api/auth';
+        var authURL = this.state.currentURL + 'api/auth';
         this.setState({
             currentURL: authURL
         })
